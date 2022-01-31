@@ -1,6 +1,11 @@
-def factorial(n):
-    fact=1
-    for x in range(1, n+1):
-        fact= fact * x
-    return fact
-print(factorial(4))
+def print_triangle(num):
+    num_arr = []
+    for x in range(0, num - 1):
+        x = (2 * x) + 1
+        num_arr.append(x)
+    num_arr = num_arr[::-1]
+    for y in num_arr:
+        print(y * "*")
+
+
+print_triangle(9)
